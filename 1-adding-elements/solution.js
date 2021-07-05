@@ -11,4 +11,12 @@ btn.addEventListener("click", () => {
       newBox.remove();
     }
   });
+
+  const colInput = document.createElement("input");
+  colInput.type = "color";
+  colInput.addEventListener("change", () => {
+    newBox.style.background = colInput.value;
+  });
+
+  newBox.append(colInput);
 });
